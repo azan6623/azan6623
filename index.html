@@ -1,47 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Stopwatch </title>
+    <title>Simple To Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header >
+        <h1>Todo List App</h1>
+    </header>
     <div class="container">
-        <h1>
-            Stop Watch</h1>
-        <div id="time">
-            <span class="digit" id="hr">
-                00</span>
-            <span class="txt">Hr</span>
-            <span class="digit" id="min">
-                00</span>
-            <span class="txt">Min</span>
-            <span class="digit" id="sec">
-                00</span>
-            <span class="txt">Sec</span>
-            <span class="digit" id="count">
-                00</span>
+        <div id="newtask">
+            <input type="text" placeholder="Task to be done..">
+            <button id="push">Add</button>
         </div>
-        <div id="buttons">
-            <button class="btn" id="start">
-                Start</button>
-            <button class="btn" id="stop">
-                Stop</button>
-            <button class="btn" id="reset">
-                Reset</button>
-        </div>
-        
+        <div id="tasks"></div>
     </div>
-
-
-
-
-
-    <script src="./app.js"></script>
+   
+    <script src="app.js"></script>
 </body>
-
 </html>

@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Simple To Do List</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header >
-        <h1>Todo List App</h1>
-    </header>
-    <div class="container">
-        <div id="newtask">
-            <input type="text" placeholder="Task to be done..">
-            <button id="push">Add</button>
-        </div>
-        <div id="tasks"></div>
+<body onload="nextQuestion()">
+    <div>
+        <p id="timer"> 2:00</p>
     </div>
-   
-    <script src="app.js"></script>
+    <div class="quiz-container ">
+        
+        <p id="ques" class="quiz-header"></p>
+
+
+        <input onclick="clicked()" value="1" name="options" type="radio">
+        <label id="opt1"></label>
+
+    <br>
+
+    
+        <input onclick="clicked()" value="2" name="options" type="radio">
+        <label id="opt2"></label>
+
+        <br>
+
+        
+        <input onclick="clicked()" value="3" name="options" type="radio">
+        <label id="opt3"></label>
+
+        <br>
+        <br>
+
+        <button onclick="nextQuestion()">Next</button>
+    
+    </div>
+
+    
+
+
+    <script src="./app.js"></script>
 </body>
 </html>
